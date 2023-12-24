@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tasknav"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.oquefazer.ui.fragment.add.AddTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task">
+    <action
+        android:id="@+id/action_addTaskFragment_to_listFragment"
+        app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editTaskFragment"
+        android:name="com.oquefazer.ui.fragment.edit.EditTaskFragment"
+        android:label="fragment_edit_task"
+        tools:layout="@layout/fragment_edit_task">
+        <action
+            android:id="@+id/action_editTaskFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <argument
+            android:name="dados_task"
+            app:argType="com.oquefazer.data.local.WhatsToDo" />
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.oquefazer.ui.fragment.list.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_listFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_editTaskFragment"
+            app:destination="@id/editTaskFragment">
+        </action>
+    </fragment>
+</navigation>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">O que fazer</string>
+
+    <string name="cancelar">Cancelar</string>
+    <string name="criar_tarefa">Criar tarefa</string>
+    <string name="hora">Hora</string>
+    <string name="data">Data</string>
+    <string name="titulo">Titulo</string>
+    <string name="tarefas">Tarefas</string>
+    <string name="botao_nova_task">Botao para add nova Task</string>
+    <string name="editar_popup">Editar</string>
+    <string name="deletar_popup">Deletar</string>
+    <string name="atualizar_tarefa">Atualizar Tarefa</string>
+    <string name="notification">Notificação</string>
+    <string name="description">Descrição</string>
+</resources>
